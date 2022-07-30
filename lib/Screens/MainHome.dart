@@ -385,7 +385,7 @@ class _MainHomeState extends State<MainHome> {
 
                                             Align(
                                               alignment: Alignment.bottomRight,
-                                              child: Icon(Icons.contacts_outlined,
+                                              child: Icon(Icons.receipt,
                                                 size: 100,
                                                 color: Colors.black12,
                                               ),
@@ -424,7 +424,7 @@ class _MainHomeState extends State<MainHome> {
 
                                             Align(
                                               alignment: Alignment.bottomRight,
-                                              child: Icon(Icons.pending_actions,
+                                              child: Icon(Icons.monetization_on,
                                                 size: 100,
                                                 color: Colors.black12,
                                               ),

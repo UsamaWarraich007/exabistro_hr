@@ -192,7 +192,7 @@ class _ExpenseState extends State<addExpense> {
                                                 borderRadius: BorderRadius.circular(18.0),
                                               )
                                           )
-                                      ),onPressed: (){}, child: Center(child: Text("Submit",style: TextStyle(fontSize: 20),))),
+                                      ),onPressed: (){}, child: Center(child: Text("Submit",style: TextStyle(fontSize: 20,color: Colors.white),))),
                                 ),),
                             ],
                           ),

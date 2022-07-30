@@ -249,7 +249,7 @@ class _PayrollState extends State<Payroll> {
                                           child: Column(
                                             crossAxisAlignment:CrossAxisAlignment.start,
                                             children: [
-                                              Text('Total Earning',
+                                              Text('Total Paid',
                                                 style: TextStyle(
                                                   color: Colors.black,
                                                   fontSize: 22,

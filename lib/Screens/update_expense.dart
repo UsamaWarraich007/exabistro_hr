@@ -192,7 +192,7 @@ class _UpdateExpenseState extends State<UpdateExpense> {
                                                   borderRadius: BorderRadius.circular(18.0),
                                                 )
                                             )
-                                        ),onPressed: (){}, child: Center(child: Text("Update",style: TextStyle(fontSize: 20),))),
+                                        ),onPressed: (){}, child: Center(child: Text("Update",style: TextStyle(fontSize: 20,color: Colors.white),))),
                                   ),),
                               ],
                             ),

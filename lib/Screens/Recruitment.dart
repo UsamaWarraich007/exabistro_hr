@@ -4,6 +4,9 @@ import 'package:exabistro_hr/Screens/EmployeeDetail.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
+import 'Add Recruitment.dart';
+import 'RecruitmentEmployee.dart';
+
 class Recruitment extends StatefulWidget {
   const Recruitment({Key? key}) : super(key: key);
 
@@ -72,7 +75,7 @@ class _RecruitmentState extends State<Recruitment> {
                             alignment: Alignment.topLeft,
                             child: InkWell(
                               onTap: (){
-                                Navigator.push(context, MaterialPageRoute(builder: (context)=>AddContracts()));
+                                Navigator.push(context, MaterialPageRoute(builder: (context)=>AddRecruitment()));
                               },
                               child: Align(
                                 alignment: Alignment.topRight,
@@ -81,32 +84,6 @@ class _RecruitmentState extends State<Recruitment> {
                               ),
                             ),
                           ),
-
-                          // Row(
-                          //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          //   children: [
-                          //     // InkWell(
-                          //     //   onTap: (){
-                          //     //     _globelKey.currentState?.openDrawer();
-                          //     //   },
-                          //     //   child: Align(
-                          //     //       alignment: Alignment.topLeft,
-                          //     //       child: FaIcon(FontAwesomeIcons.alignLeft,size: 22,color: Colors.white,)
-                          //     //
-                          //     //   ),
-                          //     // ),
-                          //     InkWell(
-                          //       onTap: (){
-                          //
-                          //       },
-                          //       child: Align(
-                          //         alignment: Alignment.topLeft,
-                          //         child: Icon(Icons.add_box_rounded,size: 40,color: Colors.white,),
-                          //
-                          //       ),
-                          //     ),
-                          //   ],
-                          // ),
                           SizedBox(
                             height: 10,
                           ),
@@ -198,10 +175,14 @@ class _RecruitmentState extends State<Recruitment> {
                                         ),
                                         child: InkWell(
                                           onTap: (){
-                                            Navigator.push(context, MaterialPageRoute(builder: (context)=>ContractsEmployee()));
+                                            Navigator.push(context, MaterialPageRoute(builder: (context)=>RecruitmentEmployee()));
                                           },
                                           child: ListTile(
                                               leading: const Icon(Icons.pending_actions),
+                                              subtitle: Text(
+                                                "Finalize Employee at company",
+                                                style: TextStyle(color: Colors.grey, fontSize: 15,fontWeight: FontWeight.bold),
+                                              ),
                                               trailing: const Text(
                                                 "8",
                                                 style: TextStyle(color: Colors.green, fontSize: 15,fontWeight: FontWeight.bold),
