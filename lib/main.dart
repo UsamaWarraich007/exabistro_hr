@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.amber,
       ),
-      home:  Expense_List(),
+      home:  MainHome(),
       localizationsDelegates: [
         //GlobalWidgetsLocalizations.delegate,
         //GlobalMaterialLocalizations.delegate,

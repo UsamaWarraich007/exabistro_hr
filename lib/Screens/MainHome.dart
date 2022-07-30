@@ -8,6 +8,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'Department.dart';
 import 'Recruitment.dart';
 import 'contracts.dart';
+import 'expense_list.dart';
 
 class MainHome extends StatefulWidget {
   const MainHome({Key? key}) : super(key: key);
@@ -399,7 +400,7 @@ class _MainHomeState extends State<MainHome> {
                                   flex: 1,
                                   child: InkWell(
                                     onTap: (){
-                                      Navigator.push(context, MaterialPageRoute(builder: (context)=>Contracts()));
+                                      Navigator.push(context, MaterialPageRoute(builder: (context)=>Expense_List()));
                                     },
                                     child: Card(
                                       elevation: 4,

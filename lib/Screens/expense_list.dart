@@ -1,7 +1,9 @@
 import 'package:exabistro_hr/Screens/EmployePerformence.dart';
+import 'package:exabistro_hr/Screens/update_expense.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
+import 'AddExpense.dart';
 import 'EmployeeAttendence.dart';
 
 class Expense_List extends StatefulWidget {
@@ -51,9 +53,24 @@ class _Expense_ListState extends State<Expense_List> {
 
                             ),
                           ),
+                          Align(
+                            alignment: Alignment.topLeft,
+                            child: InkWell(
+                              onTap: (){
+
+                                Navigator.push(context, MaterialPageRoute(builder: (context)=>addExpense()));
+
+                              },
+                              child: Align(
+                                alignment: Alignment.topRight,
+                                child: Icon(Icons.add_box_rounded,size: 40,color: Colors.white,),
+
+                              ),
+                            ),
+                          ),
                           SizedBox(
                             width: 20,
-                            height: 55,
+                            height: 15,
                           ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -106,6 +123,16 @@ class _Expense_ListState extends State<Expense_List> {
                                                       width: MediaQuery.of(context).size.width*0.87,
                                                     child: Column(
                                                       children: [
+                                                        InkWell(
+                                                          onTap: (){
+                                                            Navigator.push(context, MaterialPageRoute(builder: (context)=>UpdateExpense()));
+                                                          },
+                                                          child: Align(
+                                                            alignment: Alignment.topRight,
+                                                            child: FaIcon(FontAwesomeIcons.penToSquare,size: 22,color: Colors.black,),
+
+                                                          ),
+                                                        ),
                                                         Row(
                                                           children: [
                                                           Text("Name: ",style: TextStyle(fontSize: 19,fontWeight: FontWeight.bold),),
@@ -113,29 +140,28 @@ class _Expense_ListState extends State<Expense_List> {
                                                         ],),
                                                         SizedBox(height: 8,),
                                                         Row(
-                                                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                           children: [
-                                                            Row(children: [
-                                                              Container(
+                                                            Container(
 
-                                                              child:
-                                                              Text("Status: ",style: TextStyle(fontSize: 19,fontWeight: FontWeight.bold)),
+                                                            child:
+                                                            Text("Status: ",style: TextStyle(fontSize: 19,fontWeight: FontWeight.bold)),
                                                             ),
-                                                              Container(
-                                                                child:
-                                                                Text("Paid"),
-                                                              ),],),
-                                                           Row(
-                                                             children: [
-                                                             Container(
-                                                               child:
-                                                               Text("Paid By: ",style: TextStyle(fontSize: 19,fontWeight: FontWeight.bold)),
-                                                             ),
-                                                             Container(
-                                                               child:
-                                                               Text("Ali"),
-                                                             ),
-                                                           ],)
+                                                            Container(
+                                                              child:
+                                                              Text("Paid"),
+                                                            ),
+                                                          ],),
+                                                        SizedBox(height: 8,),
+                                                        Row(
+                                                          children: [
+                                                            Container(
+                                                              child:
+                                                              Text("Paid By: ",style: TextStyle(fontSize: 19,fontWeight: FontWeight.bold)),
+                                                            ),
+                                                            Container(
+                                                              child:
+                                                              Text("Ali"),
+                                                            ),
                                                           ],),
                                                         SizedBox(height: 8,),
                                                         Row(
