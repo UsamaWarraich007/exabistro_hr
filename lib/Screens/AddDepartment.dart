@@ -11,7 +11,6 @@ class AddDepartment extends StatefulWidget {
 
 class _AddDepartmentState extends State<AddDepartment> {
   DateTime? selectedDate;
-
   @override
   void initState() {
     super.initState();

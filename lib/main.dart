@@ -1,7 +1,10 @@
 import 'package:exabistro_hr/Screens/Attendence.dart';
 import 'package:exabistro_hr/Screens/EmployeeDetail.dart';
 import 'package:exabistro_hr/Screens/Employees.dart';
+import 'package:exabistro_hr/Screens/AddExpense.dart';
 import 'package:exabistro_hr/Screens/MainHome.dart';
+import 'package:exabistro_hr/Screens/expense_list.dart';
+import 'package:exabistro_hr/Screens/update_expense.dart';
 import 'package:flutter/material.dart';
 import 'package:month_year_picker/month_year_picker.dart';
 
@@ -32,7 +35,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.amber,
       ),
-      home:  MainHome(),
+      home:  Expense_List(),
       localizationsDelegates: [
         //GlobalWidgetsLocalizations.delegate,
         //GlobalMaterialLocalizations.delegate,
